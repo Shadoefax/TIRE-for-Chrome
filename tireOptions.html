@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Text Input Recovery Extension (TIRE) Options</title>
+		<link rel="stylesheet" type="text/css" href="tire.css">
+		<script type="text/javascript" src="taffy.js"></script>
+  </head>
+  <body>
+	<div>
+		<div>
+			<img alt="" src="TIREoptionsheader.png" height="50" width="750"><br/>
+			<span class="by">by: <a href="http://softwarebychuck.com/">Chuck Baker</a></span>
+			<br/><br/>
+			<span>Installed version: </span><span id="installedVersion"></span><br/><br/><br/>
+
+			<span>Check for changes every </span><input id="checkInterval" value="5000" min="1000" max="9999" type="number"><span> milliseconds</span><br/><br/>
+
+			<span>Save passwords </span><input id="savePasswords" type="checkbox" value="false"><br/><br/>
+
+			<span>Highlight saveable fields </span><input id="highlightFields" type="checkbox" value="false">&nbsp;&nbsp;Highlight color:&nbsp;&nbsp;<input id="highlightColor" value="#e6e6fa" name="highlightColor" type="color"><br/><br/>
+
+			<span>Show TIRE button - <img src="TIREbutton.png"></img> - on saved fields </span><input id="showButton" type="checkbox" value="false"><br/><br/>
+			<div style="margin-left: 50px;">
+				<input id="showButtonAlways" type="radio" name="showButtonType" value="always"/> Always<br/>
+				<input id="showButtonHover" type="radio" name="showButtonType" value="hover"> Only while hovering.  Remove after
+				<input id="hoverDelay" type="number" value="2000" min="0" max="9999"> milliseconds (zero means don't remove)<br/>
+			</div>
+			<br/><br/>
+
+			<span>Highlight input field while hovering TIRE icon </span><input id="highlightOnMouseover" type="checkbox" value="false">&nbsp;&nbsp;Highlight color:&nbsp;&nbsp;<input id="mouseoverHighlightColor" value="#fa8072" name="mouseoverHighlightColor" type="color"><br/><br/> 
+
+			<span>Show tooltips</span> <input id="showTooltips" type="checkbox" value="false">&nbsp;&nbsp;(Page must be refreshed to take effect)<br/><br/>
+		</div>
+		<br><br>
+		
+		<div id="tireTableDiv">
+			<table id="tireTable">
+				<thead>
+					<tr>
+						<th class="pageTitle">Page title</th>
+						<th># saved values</th>
+						<th>Select</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div class="tableTotDiv">
+			<span id="totCnt"></span>
+		</div>
+		<br/>
+		<div>
+			<button id="tireReload" class="tireButton">Reload</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id="tireSelectAll" class="tireButton">Select all</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id="tireDeleteSelected" class="tireButton">Delete selected</button>
+		</div>
+		
+		
+		<div>
+			<br><br>
+			<input id="saveButton" value="Save options" type="button" style="width: 300px">
+			<br><br>
+			<div>Links:&nbsp;
+				<input id="supportForumButton" value="Support forum" type="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="homepageButton" value="TIRE homepage" type="button"><br/><br/>
+			</div>
+			<hr>
+			<input id="storageButton" value="Show storage" type="button">
+			<input id="clearButton" value="Clear storage" type="button">
+			<br><br>
+			<textarea id="storageBox" cols="150" rows="30"></textarea>
+		</div>
+	
+	<script type="text/javascript" src="tireCommon.js"></script>
+	<script type="text/javascript" src="tireOptions.js"></script>
+
+</div></body></html>

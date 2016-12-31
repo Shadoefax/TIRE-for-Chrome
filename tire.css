@@ -1,0 +1,150 @@
+/* 
+tire.css
+Chuck Baker
+*/
+
+.tireLink{
+	text-decoration: none;
+}
+.tireLink:link{color: black;}
+.tireLink:visited {color: cornflowerblue;}
+.tireLink:hover {color: blue; text-decoration: underline;}
+.tireLink:active {color: purple;}
+
+.by{
+	font-family: font-family:'Times New Roman, Times, serif';
+	font-size: 16px;
+	font-style: italic;
+}
+
+#logo{
+	width: 300px;
+	height: 191px;
+	/*float: left;*/
+}
+
+.TIREbutton{
+	float: left;
+	
+}
+
+td {text-align: center;}
+
+.hbox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+}
+
+.vbox{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.spacer{
+	min-width: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-content:  space-around;
+}
+
+.mainBox{
+  display: flex;
+  flex-flow: column wrap;
+	font: 14px Arial;
+	color: white;
+	background-color:#ff6600;	
+}	
+
+#sandboxDiv{
+	/* Move the div offscreen so it is not visible.  Cannot use 'visibility: hidden' because any text in the div cannot be read */
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+#optionsTable{
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	width: 80%; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+#optionsTable td {
+    padding: 15px;
+    //text-align: left;
+}
+
+#optionsTitle{
+	font-family: serif;
+	font-style: bold;
+	font-size: 2em;	
+	padding-left: 35px;
+}
+
+#tireTable{
+	width: 100%;
+	//border-collapse: collapse;
+	border: 1px solid black;
+	white-space: nowrap; 
+	font-family: serif;
+	font-size: 1 em;	
+	font-style: italic;
+	background: ghostwhite;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+
+#tireTableDiv{
+	width: 80%;
+	max-height: 500px;
+	overflow: auto;	
+}
+
+.pageTitle{
+	text-align: left;
+	padding-left: 5px;
+}
+
+.tireTabelRow{
+	font-style: normal;
+}
+
+.tireTabelTitle{
+	//max-width: 200px;
+  text-align: left;
+	padding-left: 5px;
+	font-size: 1 em;
+	font-family: 'Lucida Console', monospace;
+}
+
+.tireTabelCnt{
+	width: 50px;
+  text-align: left;
+}
+
+.tireTabelSelect{
+	width: 50px;
+  text-align: right;
+}
+
+.tireButton{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.tableTotDiv{
+	float: right;
+	width: 33%;
+	padding-right: 10px;
+	padding-top: 5px;
+}
